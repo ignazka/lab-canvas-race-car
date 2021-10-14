@@ -5,14 +5,14 @@ window.onload = () => {
 
   function startGame() {
 
-    const img = new Image(); // Create new <img> element
-    img.src = '/images/road.png';
+    const canvas = document.querySelector('canvas')
+    const road = new Road(canvas);
 
-    const ctx = document.querySelector('canvas').getContext('2d');
-
-    ctx.drawImage(img, 0, 0, ctx.canvas.width, ctx.canvas.height)
+    road.drawRoad();
 
   }
 };
+
+
 
 
