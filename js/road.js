@@ -12,6 +12,7 @@ class Road {
         this.ctx.drawImage(this.img, 0, 0, this.ctx.canvas.width, this.ctx.canvas.height)
     }
 
+
 }
 
 

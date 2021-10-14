@@ -8,12 +8,24 @@ class Car {
         this.carHeight = 319 * this.scale;
         this.canvas = canvas;
         this.ctx = document.querySelector('canvas').getContext('2d');
+        this.direction = 0;
+        this.speed = 5;
     }
 
     drawCar() {
         this.ctx.drawImage(this.img, this.canvas.width / 2, (this.canvas.height / 3) * 2.3, this.carWidth, this.carHeight)
 
     }
+
+    setDirection(direction) {
+        this.direction = direction;
+    }
+
+    gibGummi(speed) {
+        this.speed *= speed;
+    }
+
+
 
 }
 
